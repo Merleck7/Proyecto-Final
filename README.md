@@ -1,0 +1,1 @@
+Este es el proyecto final para la seccion de "introduccion a la programación web", en este proyecto puede verse una pagina que simula ser un Youtube music, el cual muestra canciones destacadas, recomendadas, albums, playlist y una barra de busqueda. Para desplegarlo necesitas descargar el proyecto, y abrir el codigo HTML en cualquier navegador. 

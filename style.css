@@ -1,0 +1,197 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #df171e;
+    display: inline-block;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e62429;
+}
+
+/* Secciones */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #242424;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(222, 3, 3, 0.2);
+}
+/* Contenedor de la imagen */
+/* Contenedor de las imágenes */
+.image-container {
+    display: flex;          /* Hacemos que los elementos se alineen en fila */
+    gap: 1rem;              /* Espacio entre las imágenes */
+    flex-wrap: wrap;        /* Permite que las imágenes se ajusten si el contenedor es muy pequeño */
+    justify-content: center;/* Alinea las imágenes al centro del contenedor */
+}
+
+/* Estilo de las imágenes */
+.image-container img {
+    width: 10rem;           /* Ajusta el tamaño de las imágenes */
+    height: 10rem;          /* Ajusta el tamaño de las imágenes */
+    object-fit: cover;      /* Mantiene las imágenes con un buen encuadre */
+    border-radius: 8px;     /* Da bordes redondeados a las imágenes */
+    transition: transform 0.3s ease;
+}
+/* Overlay - El texto sobre la imagen */
+.image-link {
+    position: relative;     /* Hace que el overlay se posicione relativo a esta imagen */
+    display: inline-block;   /* Asegura que las imágenes sean bloques inline */
+}
+
+.overlay {
+    position: absolute;     /* El overlay se posiciona sobre la imagen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);  /* Fondo oscuro semi-transparente */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    visibility: hidden;  /* Inicialmente oculto */
+    opacity: 0;
+    transition: opacity 0.3s ease;  /* Transición suave */
+}
+
+/* Cuando pasamos el mouse sobre la imagen */
+.image-link:hover .overlay {
+    width: 10rem;           /* Ajusta el tamaño de las imágenes */
+    height: 10rem;
+    visibility: visible;
+    border-radius: 8px;  /* Muestra el overlay */
+    opacity: 1;           /* Hace visible el texto */
+}
+
+/* Estilo del enlace */
+.image-link {
+    text-decoration: none;  /* Elimina el subrayado del enlace */
+}
+section h2 {
+    color: #e62429;
+}
+article img {
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(222, 3, 3, 0.2);
+}
+article h3 {
+    margin-top: 0;
+    color: #f2f2f2;
+}
+
+article p {
+    color: #ccc;
+}
+
+/* Formulario */
+form {
+    margin-top: 1rem;
+}
+
+input[type="text"] {
+    width: 15rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #e62429;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e45f5f;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    color: #aaa;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #e62429;
+}

@@ -81,11 +81,6 @@ section {
     transition: transform 0.3s ease;
 }
 /* Overlay - El texto sobre la imagen */
-.image-link {
-    position: relative;     /* Hace que el overlay se posicione relativo a esta imagen */
-    display: inline-block;   /* Asegura que las imágenes sean bloques inline */
-}
-
 .overlay {
     position: absolute;     /* El overlay se posiciona sobre la imagen */
     top: 0;
@@ -113,9 +108,10 @@ section {
 .image-link:hover img {
     transform: scale(1.2);
 }
-
 /* Estilo del enlace */
 .image-link {
+    position: relative;     /* Hace que el overlay se posicione relativo a esta imagen */
+    display: inline-block;   /* Asegura que las imágenes sean bloques inline */
     text-decoration: none;  /* Elimina el subrayado del enlace */
 }
 section h2 {

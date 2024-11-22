@@ -105,11 +105,13 @@ section {
 
 /* Cuando pasamos el mouse sobre la imagen */
 .image-link:hover .overlay {
-    width: 10rem;           /* Ajusta el tamaño de las imágenes */
-    height: 10rem;
+    transform: scale(1.2);
     visibility: visible;
     border-radius: 8px;  /* Muestra el overlay */
     opacity: 1;           /* Hace visible el texto */
+}
+.image-link:hover img {
+    transform: scale(1.2);
 }
 
 /* Estilo del enlace */
